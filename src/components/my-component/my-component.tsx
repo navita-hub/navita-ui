@@ -1,15 +1,12 @@
 import { Component, Prop, Event, EventEmitter, Host, h } from '@stencil/core';
 import { format } from '../../utils/utils';
-import { BEM, hostClasses } from '../../utils';
+import * as S from './my-component.style';
 
 @Component({
   tag: 'my-component',
-  styleUrl: 'my-component.scss',
   shadow: false,
 })
 export class MyComponent {
-  private readonly componentName: string = 'my-component';
-
   @Prop() first: string;
 
   @Prop() middle: string;
@@ -25,16 +22,11 @@ export class MyComponent {
   }
 
   render() {
-    const cssClasses = hostClasses({
-      componentName: this.componentName,
-      modifier: this.modifier,
-    });
-
     return (
       <Host
-        class={cssClasses}
+        class={S.Text}
         onClick={() => this.clicked.emit()}>
-        Hello, World! I'm <span class={BEM(this, 'name')}> {this.getText()}</span>
+        Hello, World! I'm {this.getText()}
       </Host>
     );
   }

@@ -1,19 +1,11 @@
 import { Config } from '@stencil/core';
-import { sass } from '@stencil/sass';
 
-const scssVariables = 'src/scss/variables.scss';
 const { name, distDirs } = require('./package.json');
 
 export const config: Config = {
   namespace: name,
   buildEs5: false,
   taskQueue: 'async',
-  plugins: [
-    sass({
-      injectGlobalPaths: [scssVariables],
-    }),
-  ],
-  globalStyle: 'src/scss/init.scss',
   devServer: {
     reloadStrategy: 'hmr',
     openBrowser: false,

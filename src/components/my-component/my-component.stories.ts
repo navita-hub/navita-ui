@@ -10,7 +10,6 @@ const args = {
   first: 'First',
   middle: 'Middle',
   last: 'Last',
-  hex: '#fba308',
   boolean: false,
   radio: '',
   select: '',
@@ -31,9 +30,6 @@ const argTypes = {
   },
   last: {
     description: 'The last name',
-  },
-  hex: {
-    control: 'color',
   },
   radio: {
     control: {
@@ -61,10 +57,8 @@ const Template = (
     first,
     middle,
     last,
-    hex,
   }) => html`
   <my-component
-    style="color:${hex}"
     modifier="${modifier}"
     first="${first}"
     middle="${middle}"

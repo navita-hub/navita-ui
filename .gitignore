@@ -6,6 +6,7 @@ loader/
 build/
 src/components.d.ts
 storybook-static
+coverage
 *~
 *.sw[mnpcod]
 *.log
