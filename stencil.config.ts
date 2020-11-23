@@ -6,6 +6,7 @@ export const config: Config = {
   namespace: name,
   buildEs5: false,
   taskQueue: 'async',
+  globalStyle: 'src/scss/global.scss',
   devServer: {
     reloadStrategy: 'hmr',
     openBrowser: false,
