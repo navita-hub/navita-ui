@@ -24,7 +24,7 @@
     "--- production ---": "this is a divider",
     "build": "run-s build:stencil build:storybook",
     "build:stencil": "stencil build --docs",
-    "build:storybook": "build-storybook --output-dir ./dist-storybook --static-dir ./dist-stencil/stencil-storybook",
+    "build:storybook": "build-storybook --output-dir ./dist-storybook --static-dir ./dist-stencil/navita-design-system",
     "--- misc ---": "this is a divider",
     "test": "stencil test --spec --e2e --coverage",
     "lint": "run-p lint:js lint:css",
