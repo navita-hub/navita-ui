@@ -27,12 +27,11 @@
     ],
     "order/properties-alphabetical-order": true,
     "scale-unlimited/declaration-strict-value": [
-      ["/color/", "font-size", "font-weight"],
+      ["/color/", "font-size"],
       {
         "ignoreKeywords": {
           "/color/": ["transparent", "inherit"],
-          "font-size": ["inherit"],
-          "font-weight": ["inherit"]
+          "font-size": ["inherit"]
         }
       }
     ],
