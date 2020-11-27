@@ -1,4 +1,4 @@
-import{r,c as o,h as t,H as s}from"./p-7925f649.js";import{c as a,a as i}from"./p-32b13dfd.js";const e=a`
+import{r,c as o,h as t,H as s}from"./p-feb2b016.js";import{c as a,a as e}from"./p-32b13dfd.js";const i=a`
   background-color: rgb(var(--primary-color));
   border: 0;
   color: rgb(var(--button-color));
@@ -31,4 +31,4 @@ import{r,c as o,h as t,H as s}from"./p-7925f649.js";import{c as a,a as i}from"./
   &.--uppercase {
     text-transform: uppercase;
   }
-`,p=class{constructor(t){r(this,t),this.clicked=o(this,"clicked",3),this.size="default"}render(){return t(s,null,t("button",{class:i(e,"--size-"+this.size,{"--uppercase":this.uppercase}),type:"button",onClick:()=>this.clicked.emit()},t("slot",null)))}};export{p as nvtui_button}
+`,p=class{constructor(t){r(this,t),this.clicked=o(this,"clicked",3),this.size="default"}render(){return t(s,null,t("button",{class:e(i,"--size-"+this.size,{"--uppercase":this.uppercase}),type:"button",onClick:()=>this.clicked.emit()},t("slot",null)))}};export{p as nvtui_button}

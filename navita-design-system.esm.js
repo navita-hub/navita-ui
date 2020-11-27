@@ -1,1 +1,1 @@
-import{p,b as t}from"./p-7925f649.js";(()=>{const t=import.meta.url,e={};return""!==t&&(e.resourcesUrl=new URL(".",t).href),p(e)})().then(p=>t([["p-d2aa3120",[[0,"my-component",{first:[1],middle:[1],last:[1],modifier:[1]}]]],["p-02f2d4de",[[4,"nvtui-button",{size:[1],uppercase:[4]}]]],["p-4517b000",[[1,"nvtui-wrapper"]]]],p));
+import{p,b as e}from"./p-feb2b016.js";(()=>{const e=import.meta.url,r={};return""!==e&&(r.resourcesUrl=new URL(".",e).href),p(r)})().then(p=>e([["p-3e920b20",[[4,"nvtui-button",{size:[1],uppercase:[4]}]]],["p-61794a3d",[[1,"nvtui-wrapper"]]]],p));
