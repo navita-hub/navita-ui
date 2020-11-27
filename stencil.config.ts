@@ -16,10 +16,6 @@ export const config: Config = {
     {
       type: 'dist',
       dir: distDirs.stencil,
-      copy: [
-        // copy fonts into static for storybook and stencil build
-        { src: 'fonts' },
-      ],
     },
     // one file in es6
     {
