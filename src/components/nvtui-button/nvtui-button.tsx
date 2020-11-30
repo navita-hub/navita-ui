@@ -2,12 +2,22 @@ import { cx } from '@emotion/css';
 import { Component, Event, EventEmitter, Host, h, Prop } from '@stencil/core';
 import * as S from './nvtui-button.style';
 
-@Component({
-  tag: 'nvtui-button',
-  shadow: false,
-})
+@Component({ tag: 'nvtui-button' })
 export class NvtuiButton {
-  @Prop() size: string = 'default';
+  // Size props
+  @Prop() big: boolean;
+  @Prop() normal: boolean;
+  @Prop() small: boolean;
+
+  // Type props
+  @Prop() primary: boolean;
+  @Prop() secondary: boolean;
+  @Prop() tertiary: boolean;
+
+  // State props
+  @Prop() disabled: boolean;
+
+  // Text transformation props
   @Prop() uppercase: boolean;
 
   @Event({bubbles: false}) clicked!: EventEmitter<void>;
@@ -16,7 +26,16 @@ export class NvtuiButton {
     return (
       <Host>
         <button
-          class={cx(S.Button, `--size-${this.size}`, { '--uppercase': this.uppercase })}
+          disabled={this.disabled}
+          class={cx(S.Button,
+            { '--big': this.big },
+            { '--normal': this.normal },
+            { '--small': this.small },
+            { '--uppercase': this.uppercase },
+            { '--primary': this.primary },
+            { '--secondary': this.secondary },
+            { '--tertiary': this.tertiary },
+          )}
           type="button"
           onClick={() => this.clicked.emit()}
         >

@@ -82,7 +82,6 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-declaration-strict-value": "^1.6.1",
-    "stylelint-high-performance-animation": "^1.5.2",
     "stylelint-order": "^4.1.0",
     "ts-dedent": "^2.0.0",
     "typescript": "^4.0.3",
