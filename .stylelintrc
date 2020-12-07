@@ -4,8 +4,7 @@
   "plugins": [
     "stylelint-order",
     "stylelint-declaration-strict-value",
-    "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-high-performance-animation"
+    "stylelint-declaration-block-no-ignored-properties"
   ],
   "rules": {
     "declaration-no-important": [true, { "severity": "warning" }],
@@ -35,7 +34,6 @@
         }
       }
     ],
-    "plugin/declaration-block-no-ignored-properties": true,
-    "plugin/no-low-performance-animation-properties": [true, { "severity": "warning" }]
+    "plugin/declaration-block-no-ignored-properties": true
   }
 }
