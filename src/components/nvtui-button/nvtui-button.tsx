@@ -20,6 +20,9 @@ export class NvtuiButton {
   // Text transformation props
   @Prop() uppercase: boolean;
 
+  // Icons
+  @Prop() icon: string;
+
   @Event({bubbles: false}) clicked!: EventEmitter<void>;
 
   render() {
@@ -39,7 +42,17 @@ export class NvtuiButton {
           type="button"
           onClick={() => this.clicked.emit()}
         >
-          <slot />
+          <span class="text">
+            <slot />
+          </span>
+          {this.icon
+            ? (
+              <nvtui-icon
+                icon={this.icon}
+                class={cx(S.Icon, 'icon')}
+              />
+            )
+            : undefined}
         </button>
       </Host>
     );

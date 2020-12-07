@@ -12,6 +12,7 @@ const args = {
   tertiary: false,
   uppercase: false,
   disabled: false,
+  icon: 'plus',
 };
 
 const argTypes = {
@@ -81,6 +82,13 @@ const argTypes = {
       defaultValue: { summary: false },
     },
   },
+  icon: {
+    control: {
+      type: 'select',
+      options: ['', 'plus', 'trash'],
+    },
+    description: 'Icon name',
+  },
 };
 
 const customEvents = ['clicked'];
@@ -107,6 +115,7 @@ const Template = ({
   primary,
   secondary,
   tertiary,
+  icon,
 }) => html`
   <nvtui-button
     disabled="${disabled}"
@@ -117,6 +126,7 @@ const Template = ({
     normal="${normal}"
     small="${small}"
     uppercase="${uppercase}"
+    icon="${icon}"
   >${slot}</nvtui-button>
   ${action('nvtui-button', customEvents)}
 `;

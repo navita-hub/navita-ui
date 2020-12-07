@@ -1,14 +1,16 @@
 import { css } from '@emotion/css';
 
 export const Button = css`
+  align-items: center;
   border: 0;
   border-radius: 10px;
   color: rgb(var(--button-color));
+  display: flex;
   font-family: var(--font-family-roboto);
   font-size: var(--button-font-size);
   font-weight: 300;
+  justify-content: center;
   outline: 0;
-  padding: 0 42px;
   transition:
     0.2s background-color linear,
     0.2s box-shadow linear,
@@ -95,6 +97,11 @@ export const Button = css`
     }
   }
 
+  /* Adds a margin between text and icon */
+  > .text:not(:empty) ~ .icon {
+    margin-left: 8px;
+  }
+
   /* States */
   &:disabled {
     cursor: not-allowed;
@@ -103,18 +110,26 @@ export const Button = css`
   /* Sizes */
   &.--big {
     height: 48px;
+    padding: 0 16px;
   }
 
   &.--normal {
     height: 40px;
+    padding: 0 12px;
   }
 
   &.--small {
     height: 32px;
+    padding: 0 8px;
   }
 
   /* Text transformations */
   &.--uppercase {
     text-transform: uppercase;
   }
+`;
+
+export const Icon = css`
+  height: 16px;
+  width: 16px;
 `;
