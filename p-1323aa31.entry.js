@@ -1,0 +1,1 @@
+import{r as s,h as r,H as t}from"./p-5de233a5.js";import"./p-32b13dfd.js";import{I as n}from"./p-09074262.js";const a=class{constructor(r){s(this,r)}render(){switch(this.icon){case"plus":return r(t,null,r("nvtui-icon-plus",{class:n}));case"trash":return r(t,null,r("nvtui-icon-trash",{class:n}));default:return r(t,null)}}};export{a as nvtui_icon}
